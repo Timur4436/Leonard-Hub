@@ -1,151 +1,91 @@
 local function createGui(parent)
-	--ScreenGui1--
-	local ScreenGui1 = Instance.new("ScreenGui",parent)
-	ScreenGui1["Name"] = "SettingsGui"
-	ScreenGui1["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
-	----ScreenGui1----
-	--Frame2--
-	local Frame2 = Instance.new("Frame",ScreenGui1)
-	Frame2["Visible"] = false
-	Frame2["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame2["AnchorPoint"] = Vector2.new(0.5, 0.5)
-	Frame2["Name"] = "Leonardhub"
-	Frame2["Position"] = UDim2.new(0.5, 0, 0.545180738, 0)
-	Frame2["Size"] = UDim2.new(0.449999958, 0, 0.462049961, 0)
-	Frame2["BackgroundTransparency"] = 0.3499999940395355
-	Frame2["BorderSizePixel"] = 0
-	Frame2["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame2----
-	--UICorner3--
-	local UICorner3 = Instance.new("UICorner",Frame2)
-	UICorner3["CornerRadius"] = UDim.new(0.0500000007, 0)
-	----UICorner3----
-	--UIStroke4--
-	local UIStroke4 = Instance.new("UIStroke",Frame2)
-	UIStroke4["Color"] = Color3.new(1, 1, 1)
-	----UIStroke4----
-	--TextLabel5--
-	local TextLabel5 = Instance.new("TextLabel",Frame2)
-	TextLabel5["TextWrapped"] = true
-	TextLabel5["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel5["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel5["Text"] = "Leonard  Hub"
-	TextLabel5["TextSize"] = 14
-	TextLabel5["Font"] = Enum.Font.Unknown
-	TextLabel5["BackgroundTransparency"] = 1
-	TextLabel5["TextScaled"] = true
-	TextLabel5["Size"] = UDim2.new(1, 0, 0.100000001, 0)
-	TextLabel5["Name"] = "Title"
-	TextLabel5["BorderSizePixel"] = 0
-	TextLabel5["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel5----
-	--UITextSizeConstraint6--
-	local UITextSizeConstraint6 = Instance.new("UITextSizeConstraint",TextLabel5)
-	UITextSizeConstraint6["MaxTextSize"] = 38
-	----UITextSizeConstraint6----
-	--ScrollingFrame7--
-	local ScrollingFrame7 = Instance.new("ScrollingFrame",Frame2)
-	ScrollingFrame7["Active"] = true
-	ScrollingFrame7["BorderColor3"] = Color3.new(0, 0, 0)
-	ScrollingFrame7["ScrollBarThickness"] = 5
-	ScrollingFrame7["BackgroundTransparency"] = 1
-	ScrollingFrame7["Position"] = UDim2.new(0, 0, 0.0986877233, 0)
-	ScrollingFrame7["CanvasSize"] = UDim2.new(0, 0, 5, 0)
-	ScrollingFrame7["Size"] = UDim2.new(1, 0, 0.899999976, 0)
-	ScrollingFrame7["BorderSizePixel"] = 0
-	ScrollingFrame7["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----ScrollingFrame7----
-	--UIListLayout8--
-	local UIListLayout8 = Instance.new("UIListLayout",ScrollingFrame7)
-	UIListLayout8["HorizontalAlignment"] = Enum.HorizontalAlignment.Center
-	UIListLayout8["SortOrder"] = Enum.SortOrder.LayoutOrder
-	----UIListLayout8----
-	--UIAspectRatioConstraint9--
-	local UIAspectRatioConstraint9 = Instance.new("UIAspectRatioConstraint",Frame2)
-	UIAspectRatioConstraint9["AspectRatio"] = 1.684999942779541
-	----UIAspectRatioConstraint9----
-	--TextButton10--
-	local TextButton10 = Instance.new("TextButton",Frame2)
-	TextButton10["TextWrapped"] = true
-	TextButton10["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton10["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton10["Text"] = "Cham"
-	TextButton10["TextSize"] = 21
-	TextButton10["Font"] = Enum.Font.SciFi
-	TextButton10["Name"] = "rotfgfd"
-	TextButton10["Position"] = UDim2.new(0.0928504243, 0, 0.109648645, 0)
-	TextButton10["TextScaled"] = true
-	TextButton10["Size"] = UDim2.new(0.221293733, 0, 0.0834416598, 0)
-	TextButton10["BorderSizePixel"] = 0
-	TextButton10["BackgroundColor3"] = Color3.new(0.25098, 1, 0.713726)
-	----TextButton10----
-	--UICorner11--
-	local UICorner11 = Instance.new("UICorner",TextButton10)
-	----UICorner11----
-	--Script12--
-	local Script12 = Instance.new("Script",TextButton10)
-	----Script12----
-	--UITextSizeConstraint13--
-	local UITextSizeConstraint13 = Instance.new("UITextSizeConstraint",TextButton10)
-	UITextSizeConstraint13["MaxTextSize"] = 21
-	----UITextSizeConstraint13----
-	--TextButton14--
-	local TextButton14 = Instance.new("TextButton",ScreenGui1)
-	TextButton14["TextWrapped"] = true
-	TextButton14["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton14["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton14["Text"] = " "
-	TextButton14["TextSize"] = 14
-	TextButton14["Font"] = Enum.Font.SourceSans
-	TextButton14["Name"] = ""
-	TextButton14["Position"] = UDim2.new(0.0159901604, 0, 0.33877039, 0)
-	TextButton14["TextScaled"] = true
-	TextButton14["Size"] = UDim2.new(0.0375153758, 0, 0.0649061203, 0)
-	TextButton14["BorderSizePixel"] = 0
-	TextButton14["BackgroundColor3"] = Color3.new(0.164706, 0.164706, 0.164706)
-	----TextButton14----
-	--UICorner15--
-	local UICorner15 = Instance.new("UICorner",TextButton14)
-	UICorner15["CornerRadius"] = UDim.new(0, 12)
-	----UICorner15----
-	--UIAspectRatioConstraint16--
-	local UIAspectRatioConstraint16 = Instance.new("UIAspectRatioConstraint",TextButton14)
-	----UIAspectRatioConstraint16----
-	--Script17--
-	local Script17 = Instance.new("Script",TextButton14)
-	Script17["Name"] = "Settings On/Off Script"
-	----Script17----
-	--UITextSizeConstraint18--
-	local UITextSizeConstraint18 = Instance.new("UITextSizeConstraint",TextButton14)
-	UITextSizeConstraint18["MaxTextSize"] = 14
-	----UITextSizeConstraint18----
-	--TextButton19--
-	local TextButton19 = Instance.new("TextButton",ScreenGui1)
-	TextButton19["TextWrapped"] = true
-	TextButton19["TextColor3"] = Color3.new(0, 0, 0)
-	TextButton19["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton19["Text"] = "Fly"
-	TextButton19["TextSize"] = 21
-	TextButton19["Font"] = Enum.Font.SciFi
-	TextButton19["Name"] = "BUttonchik"
-	TextButton19["Position"] = UDim2.new(0.753636599, 0, 0.451238006, 0)
-	TextButton19["TextScaled"] = true
-	TextButton19["Size"] = UDim2.new(0.0995821729, 0, 0.0385542177, 0)
-	TextButton19["BorderSizePixel"] = 0
-	TextButton19["BackgroundColor3"] = Color3.new(0.25098, 1, 0.713726)
-	----TextButton19----
-	--UICorner20--
-	local UICorner20 = Instance.new("UICorner",TextButton19)
-	----UICorner20----
-	--Script21--
-	local Script21 = Instance.new("Script",TextButton19)
-	----Script21----
-	--UITextSizeConstraint22--
-	local UITextSizeConstraint22 = Instance.new("UITextSizeConstraint",TextButton19)
-	UITextSizeConstraint22["MaxTextSize"] = 21
-	----UITextSizeConstraint22----
-	spawn(function() --Source for Script12
-		local script = Script12
+	--Frame1--
+	local Frame1 = Instance.new("Frame",parent)
+	Frame1["Visible"] = false
+	Frame1["BorderColor3"] = Color3.new(0, 0, 0)
+	Frame1["AnchorPoint"] = Vector2.new(0.5, 0.5)
+	Frame1["Name"] = "Leonardhub"
+	Frame1["Position"] = UDim2.new(0.5, 0, 0.545180738, 0)
+	Frame1["Size"] = UDim2.new(0.449999958, 0, 0.462049961, 0)
+	Frame1["BackgroundTransparency"] = 0.3499999940395355
+	Frame1["BorderSizePixel"] = 0
+	Frame1["BackgroundColor3"] = Color3.new(0, 0, 0)
+	----Frame1----
+	--UICorner2--
+	local UICorner2 = Instance.new("UICorner",Frame1)
+	UICorner2["CornerRadius"] = UDim.new(0.0500000007, 0)
+	----UICorner2----
+	--UIStroke3--
+	local UIStroke3 = Instance.new("UIStroke",Frame1)
+	UIStroke3["Color"] = Color3.new(1, 1, 1)
+	----UIStroke3----
+	--TextLabel4--
+	local TextLabel4 = Instance.new("TextLabel",Frame1)
+	TextLabel4["TextWrapped"] = true
+	TextLabel4["TextColor3"] = Color3.new(1, 1, 1)
+	TextLabel4["BorderColor3"] = Color3.new(0, 0, 0)
+	TextLabel4["Text"] = "Leonard  Hub"
+	TextLabel4["TextSize"] = 14
+	TextLabel4["Font"] = Enum.Font.Unknown
+	TextLabel4["BackgroundTransparency"] = 1
+	TextLabel4["TextScaled"] = true
+	TextLabel4["Size"] = UDim2.new(1, 0, 0.100000001, 0)
+	TextLabel4["Name"] = "Title"
+	TextLabel4["BorderSizePixel"] = 0
+	TextLabel4["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----TextLabel4----
+	--UITextSizeConstraint5--
+	local UITextSizeConstraint5 = Instance.new("UITextSizeConstraint",TextLabel4)
+	UITextSizeConstraint5["MaxTextSize"] = 38
+	----UITextSizeConstraint5----
+	--ScrollingFrame6--
+	local ScrollingFrame6 = Instance.new("ScrollingFrame",Frame1)
+	ScrollingFrame6["Active"] = true
+	ScrollingFrame6["BorderColor3"] = Color3.new(0, 0, 0)
+	ScrollingFrame6["ScrollBarThickness"] = 5
+	ScrollingFrame6["BackgroundTransparency"] = 1
+	ScrollingFrame6["Position"] = UDim2.new(0, 0, 0.0986877233, 0)
+	ScrollingFrame6["CanvasSize"] = UDim2.new(0, 0, 5, 0)
+	ScrollingFrame6["Size"] = UDim2.new(1, 0, 0.899999976, 0)
+	ScrollingFrame6["BorderSizePixel"] = 0
+	ScrollingFrame6["BackgroundColor3"] = Color3.new(1, 1, 1)
+	----ScrollingFrame6----
+	--UIListLayout7--
+	local UIListLayout7 = Instance.new("UIListLayout",ScrollingFrame6)
+	UIListLayout7["HorizontalAlignment"] = Enum.HorizontalAlignment.Center
+	UIListLayout7["SortOrder"] = Enum.SortOrder.LayoutOrder
+	----UIListLayout7----
+	--UIAspectRatioConstraint8--
+	local UIAspectRatioConstraint8 = Instance.new("UIAspectRatioConstraint",Frame1)
+	UIAspectRatioConstraint8["AspectRatio"] = 1.684999942779541
+	----UIAspectRatioConstraint8----
+	--TextButton9--
+	local TextButton9 = Instance.new("TextButton",Frame1)
+	TextButton9["TextWrapped"] = true
+	TextButton9["TextColor3"] = Color3.new(0, 0, 0)
+	TextButton9["BorderColor3"] = Color3.new(0, 0, 0)
+	TextButton9["Text"] = "Cham"
+	TextButton9["TextSize"] = 21
+	TextButton9["Font"] = Enum.Font.SciFi
+	TextButton9["Name"] = "rotfgfd"
+	TextButton9["Position"] = UDim2.new(0.0928504243, 0, 0.109648645, 0)
+	TextButton9["TextScaled"] = true
+	TextButton9["Size"] = UDim2.new(0.221293733, 0, 0.0834416598, 0)
+	TextButton9["BorderSizePixel"] = 0
+	TextButton9["BackgroundColor3"] = Color3.new(0.25098, 1, 0.713726)
+	----TextButton9----
+	--UICorner10--
+	local UICorner10 = Instance.new("UICorner",TextButton9)
+	----UICorner10----
+	--Script11--
+	local Script11 = Instance.new("Script",TextButton9)
+	----Script11----
+	--UITextSizeConstraint12--
+	local UITextSizeConstraint12 = Instance.new("UITextSizeConstraint",TextButton9)
+	UITextSizeConstraint12["MaxTextSize"] = 21
+	----UITextSizeConstraint12----
+	spawn(function() --Source for Script11
+		local script = Script11
 		-- LocalScript для TextButton (Подсветка игроков с никами)
 		local button = script.Parent
 		
@@ -377,234 +317,6 @@ local function createGui(parent)
 		-- Функция для выключения подсветки всех игроков
 		local function disableAllHighlights()
 			print("🔦 Выключа
-		
-	end)
-	spawn(function() --Source for Script17
-		local script = Script17
-		local frame = script.Parent.Parent.Leonardhub
-		
-		script.Parent.MouseButton1Click:Connect(function()
-			frame.Visible = not frame.Visible
-		end)
-	end)
-	spawn(function() --Source for Script21
-		local script = Script21
-		-- Этот скрипт должен быть в TextButton с именем "BUttonchik"
-		local button = script.Parent
-		
-		-- Проверка что это кнопка
-		if not button:IsA("TextButton") then
-			warn("Скрипт должен быть в TextButton")
-			return
-		end
-		
-		-- Настройки
-		local HoverAnimID = "rbxassetid://82586330504706"
-		local FlyAnimID = "rbxassetid://112287802888508"
-		
-		-- Переменные
-		local Flying = false
-		local player = game.Players.LocalPlayer
-		local character, humanoid, rootPart
-		local bodyVelocity, bodyGyro, hoverAnim, flyAnim, sound1
-		
-		-- Инициализация
-		local function initialize()
-			-- Ждем персонажа
-			character = player.Character or player.CharacterAdded:Wait()
-			humanoid = character:WaitForChild("Humanoid")
-			rootPart = character:WaitForChild("HumanoidRootPart")
-		
-			-- Создаем объекты для полета
-			bodyVelocity = Instance.new("BodyVelocity")
-			bodyVelocity.MaxForce = Vector3.new(40000, 40000, 40000)
-			bodyVelocity.Velocity = Vector3.new(0, 0, 0)
-		
-			bodyGyro = Instance.new("BodyGyro")
-			bodyGyro.MaxTorque = Vector3.new(40000, 40000, 40000)
-			bodyGyro.P = 1000
-			bodyGyro.D = 100
-		
-			-- Анимации
-			local hoverAnimation = Instance.new("Animation")
-			hoverAnimation.AnimationId = HoverAnimID
-			local flyAnimation = Instance.new("Animation")
-			flyAnimation.AnimationId = FlyAnimID
-		
-			local animator = humanoid:FindFirstChildOfClass("Animator")
-			if not animator then
-				animator = Instance.new("Animator")
-				animator.Parent = humanoid
-			end
-		
-			hoverAnim = animator:LoadAnimation(hoverAnimation)
-			flyAnim = animator:LoadAnimation(flyAnimation)
-		
-			-- Звук
-			sound1 = Instance.new("Sound")
-			sound1.SoundId = "rbxassetid://3308152153"
-			sound1.Volume = 0.5
-			sound1.Parent = rootPart
-		
-			-- Настраиваем кнопку
-			button.Text = "FLY"
-			button.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
-		
-			print("Система полета готова!")
-		end
-		
-		-- Функция полета
-		local function updateFlight()
-			if not Flying or not bodyVelocity then return end
-		
-			local camera = workspace.CurrentCamera
-		
-			-- Поворачиваем по камере
-			bodyGyro.CFrame = camera.CFrame
-		
-			-- Двигаем по WASD
-			local direction = Vector3.new(0, 0, 0)
-		
-			if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.W) then
-				direction = direction + camera.CFrame.LookVector
-			end
-			if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.S) then
-				direction = direction - camera.CFrame.LookVector
-			end
-			if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.A) then
-				direction = direction - camera.CFrame.RightVector
-			end
-			if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.D) then
-				direction = direction + camera.CFrame.RightVector
-			end
-			if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.Space) then
-				direction = direction + Vector3.new(0, 1, 0)
-			end
-			if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftShift) then
-				direction = direction - Vector3.new(0, 1, 0)
-			end
-		
-			-- Нормализуем и применяем скорость
-			if direction.Magnitude > 0 then
-				direction = direction.Unit
-		
-				-- Активный полет
-				if hoverAnim.IsPlaying then hoverAnim:Stop() end
-				if not flyAnim.IsPlaying then flyAnim:Play() end
-				if not sound1.IsPlaying then sound1:Play() end
-		
-				-- Эффект скорости
-				game:GetService("TweenService"):Create(
-					workspace.CurrentCamera,
-					TweenInfo.new(0.5),
-					{FieldOfView = 100}
-				):Play()
-			else
-				-- Парение на месте
-				if flyAnim.IsPlaying then flyAnim:Stop() end
-				if not hoverAnim.IsPlaying then hoverAnim:Play() end
-				if sound1.IsPlaying then sound1:Stop() end
-		
-				-- Нормальный вид
-				game:GetService("TweenService"):Create(
-					workspace.CurrentCamera,
-					TweenInfo.new(0.5),
-					{FieldOfView = 70}
-				):Play()
-			end
-		
-			-- Применяем скорость
-			bodyVelocity.Velocity = direction * 350
-		end
-		
-		-- Включение/выключение полета
-		local function toggleFlight()
-			Flying = not Flying
-		
-			if Flying then
-				-- Включаем полет
-				humanoid:SetStateEnabled(Enum.HumanoidStateType.Running, false)
-				humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing, false)
-				humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, false)
-				humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, false)
-		
-				humanoid:ChangeState(Enum.HumanoidStateType.Freefall)
-		
-				bodyVelocity.Parent = rootPart
-				bodyGyro.Parent = rootPart
-		
-				hoverAnim:Play()
-		
-				button.Text = "UNFLY"
-				button.BackgroundColor3 = Color3.fromRGB(255, 100, 0)
-		
-				print("FLY")
-			else
-				-- Выключаем полет
-				humanoid:SetStateEnabled(Enum.HumanoidStateType.Running, true)
-				humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing, true)
-				humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, true)
-				humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, true)
-		
-				bodyVelocity.Parent = nil
-				bodyGyro.Parent = nil
-		
-				hoverAnim:Stop()
-				flyAnim:Stop()
-				sound1:Stop()
-		
-				button.Text = "FLY"
-				button.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
-		
-				-- Возвращаем нормальный FOV
-				game:GetService("TweenService"):Create(
-					workspace.CurrentCamera,
-					TweenInfo.new(0.5),
-					{FieldOfView = 70}
-				):Play("FLY")
-		
-				print("FLY")
-			end
-		end
-		
-		-- Нажатие на кнопку
-		button.MouseButton1Click:Connect(function()
-			if not character then
-				initialize()
-			end
-			toggleFlight()
-		end)
-		
-		-- Обновление полета
-		game:GetService("RunService").Heartbeat:Connect(updateFlight)
-		
-		-- Инициализация при наличии персонажа
-		if player.Character then
-			task.wait(0.5)
-			initialize()
-		else
-			player.CharacterAdded:Connect(function()
-				task.wait(0.5)
-				initialize()
-			end)
-		end
-		
-		-- Обработка смерти
-		player.CharacterAdded:Connect(function(char)
-			char:WaitForChild("Humanoid").Died:Connect(function()
-				if Flying then
-					Flying = false
-					if bodyVelocity then bodyVelocity.Parent = nil end
-					if bodyGyro then bodyGyro.Parent = nil end
-					if hoverAnim then hoverAnim:Stop() end
-					if flyAnim then flyAnim:Stop() end
-					if sound1 then sound1:Stop() end
-		
-					button.Text = "Включить полет"
-					button.BackgroundColor3 = Color3.fromRGB(0, 120, 255)
-				end
-			end)
-		end)
 		
 	end)
 end
